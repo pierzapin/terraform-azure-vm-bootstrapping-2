@@ -1,10 +1,10 @@
 ####################
 # Common Variables #
 ####################
-company     = "kopicloud"
-app_name    = "iaas"
+company     = "assurity"
+app_name    = "fodo_plus"
 environment = "development"
-location    = "northeurope"
+location    = "australiaeast"
 
 ##################
 # Authentication #
@@ -19,12 +19,6 @@ azure-tenant-id       = ""
 ###########
 network-vnet-cidr   = "10.128.0.0/16"
 network-subnet-cidr = "10.128.1.0/24"
-
-############
-# Linux VM #
-############
-web-linux-vm-size        = "Standard_B1s"
-web-linux-admin-username = "tfadmin"
 
 ##############
 # Windows VM #
