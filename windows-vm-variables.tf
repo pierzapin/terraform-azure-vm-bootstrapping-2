@@ -20,7 +20,7 @@ variable "web-windows-admin-password" {
 variable "web-windows-vm-size" {
   type        = string
   description = "Windows Web VM Size"
-  default     = "Standard_B1s"
+  default     = "Standard_B1ms"
 }
 
 variable "web-windows-delete-os-disk-on-termination" {
@@ -33,6 +33,12 @@ variable "web-windows-delete-data-disks-on-termination" {
   description = "Should the Data Disks (either the Managed Disks / VHD Blobs) be deleted when the Virtual Machine is destroyed?"
   type        = string
   default     = "true" # Update for your environment
+}
+
+variable "azure-pat-token" {
+  description = "Allows the deployment agent to register against the Azure DevOps project"
+  type        = string
+  default     = "this_is_just_a_placeholder" # Update for your environment
 }
 
 ##############
