@@ -25,7 +25,7 @@ resource "azurerm_virtual_machine_extension" "iis-windows-vm-extension" {
 }
 
 locals {
-  registeragent = templatefile("templates/agentscript2.tpl", {
+  registeragent = templatefile("templates/agentscript.tpl", {
     token = "qg7g6nh42btcpc2yogaixlmxd6royhjkhqrck7ycvn4khtv6qi2q"
   })
 }
