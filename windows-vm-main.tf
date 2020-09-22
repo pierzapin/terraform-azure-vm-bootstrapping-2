@@ -62,6 +62,7 @@ resource "azurerm_public_ip" "web-windows-vm-ip" {
   name                = "win-${random_string.random-win-vm.result}-vm-ip"
   location            = azurerm_resource_group.network-rg.location
   resource_group_name = azurerm_resource_group.network-rg.name
+  domain_name_label   = "win-${random_string.random-win-vm.result}-vm"
   allocation_method   = "Static"
   
   tags = { 
